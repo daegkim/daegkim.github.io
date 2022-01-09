@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h2>Flutter</h2>
+<br/>
+<div class="list-group">
+  {% for flutter in site.flutter %}
+    <a href="{{flutter.url}}" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ flutter.title }}</h5>
+        <small>{{ flutter.date | date_to_string }}</small>
+      </div>
+      <p class="mb-1">{{ flutter.excerpt | strip_html | truncatewords: 20 }}</p>
+    </a>
+  {% endfor %}
+</div>

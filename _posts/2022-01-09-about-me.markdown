@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2022-01-09 15:35:33 +0900
+group_name: about
+---
+## Language
+1. python
+2. javascript
+3. java
+4. c#
+
+## Framework
+1. React
+2. Express
+
+```python
+def hello():
+  print('hello')
+```
+```javascript
+function hello() {
+  console.log('hello')
+}
+```
+
+```bash
+source .~/profile
+```

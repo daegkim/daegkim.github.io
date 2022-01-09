@@ -1,0 +1,14 @@
+---
+layout: default
+title: Home
+---
+{% for post in site.posts %}
+  {% if post.group_name == "about" %}
+    <div class="post-title">
+      <h2>{{post.title}}</h2>
+      <h5>{{post.date | date_to_string}}</h2>
+    </div>
+    <hr/>
+    {{ post.content | markdownify}}
+  {% endif %}
+{% endfor %}

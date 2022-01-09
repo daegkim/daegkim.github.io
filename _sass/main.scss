@@ -5,7 +5,6 @@ html, body {
 
 .side-bar {
   float: left;
-  position: relative;
   height: 100%;
   width: 200px;
   box-shadow: 0px 0px 2px 2px #d3d3d3;
@@ -18,13 +17,16 @@ html, body {
 .side-bar::-webkit-scrollbar {
   width: 4px;
 }
+
 .side-bar::-webkit-scrollbar-track {
   background: white;
 }
+
 .side-bar::-webkit-scrollbar-thumb {
   background: #d3d3d3;
   visibility:hidden;
 }
+
 .side-bar:hover::-webkit-scrollbar-thumb {
   visibility:visible;
 }
@@ -33,11 +35,20 @@ html, body {
   width: 150px;
   height: 150px;
 }
+
 .side-nav {
   margin-top: 50px;
 }
 
 .content {
-  padding-top: 50px;
+  display: inline-block;
+  height: 100%;
+  width: calc(100% - 200px);
+  padding: 100px;
+  overflow-y: auto;
+}
+
+.post-title {
   text-align: center;
+  margin-bottom: 30px;
 }

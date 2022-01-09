@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "group_name": "about",
+      "items": [
+        {"item_name": "About me", "link": "about.html"}
+      ]
+    },
+    {
+      "group_name": "dev",
+      "items": [
+        {"item_name": "flutter", "link": "flutter.html"},
+        {"item_name": "python", "link": "python.html"},
+        {"item_name": "github.io", "link": "githubio.html"}
+      ]
+    }
+  ]
+}
