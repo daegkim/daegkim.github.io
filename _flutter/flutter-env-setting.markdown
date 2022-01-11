@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "flutter 예제 따라하기"
-date:   2022-01-09 15:35:33 +0900
+date:   2022-01-10
 excerpt_separator: <!--more-->
 ---
 flutter 공식 문서의 예제를 따라서 실습 진행
+<!--more-->
 
 ### 1~2단계 실습내용  
 1. flutter create my_app
