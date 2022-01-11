@@ -1,29 +1,41 @@
 ---
 layout: post
-title:  "flutter 예제 따라하기"
+title:  "flutter환경설정(맥OS)"
 date:   2022-01-10
-excerpt_separator: <!--more-->
 ---
-flutter 공식 문서의 예제를 따라서 실습 진행
-<!--more-->
+## 환경설정
+### 1. flutter sdk설치
+- [다운로드 경로](https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_2.8.1-stable.zip)에서 다운로드
+  - 한국 flutter.dev에는 이상하게 링크가 깨져 있어서 가져왔습니다.
+  - 혹은 `git clone -b master https://github.com/flutter/flutter.git` 으로 클론해도 잘 됩니다.
+- 원하는 곳에 압축 해제
+- `cd /` 입력 후 `vim .zshrc`
+- `.zshrc`에 `export PATH="$PATH:{압축해제한 절대경로(?)}/flutter/bin`입력 후 저장
+  - [예시] `export PATH="$PATH:Users/daegeunkim/development/flutter/bin"`
+- `source .zshrc` 입력
+- `flutter --version`으로 정상 세팅 확인
 
-### 1~2단계 실습내용  
-1. flutter create my_app
-(app이름 지을 때, under bar만 가능)
+### 2. xcode 설치
+- xcode 설치
+- xcode에 있는 모바일 시뮬레이터를 `open -a simulator`로 시작
 
-2. vscode에서 해당 폴더로 이동 
-`cd /my_app`
+### 3. flutter sample app 실행
+- 터미널로 app실행
+```bash
+flutter create my_app
+cd my_app
+flutter run
+/* react와 유사함 */
+```
+- vscode로 app실행
+  - Extension설치 : Flutter
+  - vscode로 프로젝트 오픈
+  - `open -a simulator`로 시뮬레이터 켜기
+  - vscode 우측 하단에 no devices를 클릭해서 시뮬레이터 선택
+    - ![우측하단]("../assets/images/vscode-simulator.png")
+  - F5 혹은 디버깅 버튼 눌러서 디버깅 시작
 
-3. 메인 소스 수정
-`my_app/lib/main.dart` 내의 소스를 전부 복붙
-
-4. pubspec.yaml에 패키지 추가(package.json과 유사한 기능으로 보임)
-	- `my_app/pubspec.yaml`에 "english_words"를 추가
-    - 공식문서에는 english_words의 버전을 3.1.0으로 가져오라고 하지만 에러 발생함. 이에 4.0.0(최신버전)으로 가져오니 에러 발생하지 않음
-
-5. 시뮬레이터 중앙에 랜덤하게 문자가 입력되는 것을 확인
-- `open -a Simulator`
-- vscode에서 우측 하단에서 방금 켠 시뮬레이터 선택
-- F5로 디버깅 시작
-	- 디버깅 툴은 flutter & dart 선택
-- 소스를 저장할 때마다 hot reload로 인하여 시뮬레이터 중앙에 랜덤하게 문자 입력되는 것을 확인
+### 4. 아이폰으로 배포(나중에 필요하면 진행..)
+- 공식문서 가이드를 따라가던 중에 문제가 생긴 것이 있어서 공유
+- 내 애플 계정을 개발자 계정으로 등록해야 함
+  - [경로](https://developer.apple.com/account/)
