@@ -1,17 +1,33 @@
 html, body {
   height: 100%;
-  color: white;
 }
 
-.side-bar {
-  float: left;
-  height: 100%;
+@media screen and (max-width: 768px) {
+  .side-bar-wrapper {
+    display: none;
+  }
+
+  .content {
+    margin: 0px !important;
+  }
+}
+
+.side-bar-wrapper {
+  position: fixed;
   width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
   box-shadow: 0px 0px 2px 2px #d3d3d3;
-  padding-top: 50px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: 10px;
+  padding-top: 80px;
+}
+
+.content {
+  margin-left: 215px;
+  padding-top: 100px;
+  height: 100%;
 }
 
 .side-bar::-webkit-scrollbar {
@@ -34,18 +50,6 @@ html, body {
 .side-bar .profile-img {
   width: 150px;
   height: 150px;
-}
-
-.side-nav {
-  margin-top: 50px;
-}
-
-.content {
-  display: inline-block;
-  height: 100%;
-  width: calc(100% - 200px);
-  padding: 100px;
-  overflow-y: auto;
 }
 
 .post-title {

@@ -59,6 +59,5 @@ date:   2022-01-10
 #### 9. `Scaffold`
 - MaterialApp과 같은 layout위젯으로 생각했다.
 
-
 ## 참조
-- https://pks2974.medium.com/flutter-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-9532e16aff57
+- [박성룡 medium](https://pks2974.medium.com/flutter-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-9532e16aff57)
