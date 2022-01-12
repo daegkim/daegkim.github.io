@@ -21,11 +21,26 @@ kramdown:
 collections:
   flutter:
     output: true
+  githubio:
+    output: true
+  memo:
+    output: true
+
 
 defaults:
   - scope:
       path: ""
       type: "flutters"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "githubio"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "memo"
     values:
       layout: "post"
   - scope:

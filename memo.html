@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h2>Memo</h2>
+<br/>
+<div class="list-group">
+  {% for memo in site.memo %}
+    <a href="{{memo.url}}" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ memo.title }}</h5>
+        <small class="post-list-date">{{ memo.date | date_to_string }}</small>
+      </div>
+    </a>
+  {% endfor %}
+</div>

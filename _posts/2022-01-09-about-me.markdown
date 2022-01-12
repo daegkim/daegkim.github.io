@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to daegkim.github.io"
 date:   2022-01-09 15:35:33 +0900
 group_name: about
 ---
 ## Language
-1. python
-2. javascript
+1. javascript
+2. python
 3. java
 4. c#
 
 ## Framework
 1. React
 2. Express
+3. Flutter
 
 ```python
 def hello():

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h2>github.io</h2>
+<br/>
+<div class="list-group">
+  {% for githubio in site.githubio %}
+    <a href="{{githubio.url}}" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ githubio.title }}</h5>
+        <small class="post-list-date">{{ githubio.date | date_to_string }}</small>
+      </div>
+    </a>
+  {% endfor %}
+</div>
