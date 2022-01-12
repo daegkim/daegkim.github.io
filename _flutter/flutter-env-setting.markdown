@@ -32,7 +32,7 @@ flutter run
   - vscode로 프로젝트 오픈
   - `open -a simulator`로 시뮬레이터 켜기
   - vscode 우측 하단에 no devices를 클릭해서 시뮬레이터 선택
-    - ![우측하단](../assets/images/vscode-simulator.png")
+    - ![우측하단](../assets/images/vscode-simulator.png)
   - F5 혹은 디버깅 버튼 눌러서 디버깅 시작
 
 ### 4. 아이폰으로 배포(나중에 필요하면 진행..)

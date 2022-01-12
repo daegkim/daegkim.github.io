@@ -20,10 +20,20 @@
     <div class="side-bar-wrapper">
       {% include sidebar.html %}
     </div>
-    <div class="containter content">
+    
+    <div id="mobile-side-bar-wrapper">
+      {% include sidebar.html %}
+    </div>
+
+    <div class="containter content-wrapper">
       <div class="row">
+        <div class="col">
+          <button id="btn-hamburger" onclick="handleHamburgerBtn">
+            <img id="img-humburger" src="../assets/images/hamburger.png" />
+          </button>
+        </div>
       </div>
-      <div class="row">
+      <div class="row content">
         <div class="col-lg-2 col-sm-1 col-1"></div>
         <div class="col-lg-8 col-sm-10 col-10">
           {{ content }}
@@ -31,5 +41,15 @@
         <div class="col-lg-2 col-sm-1 col-10"></div>
       </div>
     </div>
+    <script>
+      window.onload = () => {
+        const btnHamburger = document.getElementById('btn-hamburger')
+        btnHamburger.onclick = handleHamburgerBtn;
+
+        function handleHamburgerBtn(e) {
+          const mobileSidebar = document.getElementById('mobile-side-bar-wrapper').style.display = "block"
+        }
+      };
+    </script>
   </body>
 </html>
