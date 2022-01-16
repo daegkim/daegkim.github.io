@@ -37,7 +37,7 @@ flutter run
   - `open -a simulator`로 시뮬레이터 켜기
   - vscode 우측 하단에 no devices를 클릭해서 시뮬레이터 선택
   <br/>
-  <img src="../assets/images/vscode-simulator.png" width="300" height="80">
+  <img src="../assets/images/vscode-simulator.png" width="280" height="80">
   - F5 혹은 디버깅 버튼 눌러서 디버깅 시작
 <br />
 <br />

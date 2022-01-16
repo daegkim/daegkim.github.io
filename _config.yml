@@ -25,30 +25,3 @@ collections:
     output: true
   memo:
     output: true
-
-
-defaults:
-  - scope:
-      path: ""
-      type: "flutters"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "githubio"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "memo"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
