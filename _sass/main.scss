@@ -13,6 +13,7 @@ html, body {
 
   .content {
     padding-top: 50px !important;
+    padding-bottom: 50px !important;
   }
 
   #btn-hamburger {
@@ -57,7 +58,7 @@ html, body {
   background-color: white;
   z-index: 1000;
   box-shadow: 0px 0px 2px 2px #d3d3d3;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 @keyframes slidein {
@@ -87,7 +88,7 @@ html, body {
   left: 0;
   background-color: rgba(255,255,255,0.9);
   z-index: 1000;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -99,6 +100,7 @@ html, body {
 
 .content {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #btn-hamburger {
@@ -140,4 +142,8 @@ html, body {
 .post-title {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.side-nav {
+  margin-top: 40px;
 }

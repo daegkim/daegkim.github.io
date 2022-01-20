@@ -38,3 +38,21 @@ collections:
 
 #### 4. 해당 카테고리의 link를 타고 들어가서 띄울 페이지 추가
 - xxx.html 추가하여 작성
+
+#### 5. syntax_highlighter 수정
+아래와 같이 _config.yml을 설정하고
+```yml
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+```
+rougify를 설치하고 아래 명령어를 입력하면 원하는 테마를 지정할 수 있다.
+```bash
+rougify style ${원하는테마}  > ${css파일 경로}
+rougify style base16.dark  > assets/css/syntax.css
+```
+[페이지](https://spsarolkar.github.io/rouge-theme-preview/)에 접속하면 테마가 어떤 모양인지를 볼 수 있다.
+
+그리고 나는 코드에 padding이 없어서 syntax.css에
+`pre.highlight { padding: 10px; }`를 추가했다.
