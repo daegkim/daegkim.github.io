@@ -18,6 +18,8 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+asset_url: /assets
+
 collections:
   flutter:
     output: true
