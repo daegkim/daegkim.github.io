@@ -4,7 +4,8 @@ title:  "flutter 기본 위젯 실습2"
 date:   2022-01-19
 ---
 
-StatefulWidget을 활용한 좋아요 버튼 구현
+<p>StatefulWidget을 활용한 좋아요 버튼 구현</p>
+
 ```dart
 class FavoriteWidget extends StatefulWidget {
   // 1. 생성자
@@ -94,3 +95,8 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
 <p>개인적으로 StatelessWidget처럼 build를 StatefulWidget에서 재정의 하는게 더 맞는거 아닌가 생각된다.</p>
 <p>왜 State 안에서 재정의하도록 했을까? 마치 State가 Widget객체인 것처럼...</p>
 <p>아마도 State에 따라 빌드되는 값이 다르기 때문에 하나에 몰아둔 것 같기도 하다.</p>
+<p style="font-weight: bold">visibility</p>
+<p>visibility속성도 Visibility라는 Widget을 통해서 한다.</p>
+<p>이런 식으로 모든게 위젯이면 Tree가 엄청 깊게 쌓일 것 같은데 괜찮을런지 모르겠다.</p>
+<img src="../assets/images/before_favorite.png" width="300" height="200">
+<img src="../assets/images/after_favorite.png" width="300" height="200">
